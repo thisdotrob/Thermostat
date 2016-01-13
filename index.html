@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="javascripts/thermostat.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <link href="stylesheets/styles.css" rel="stylesheet" />
+    <title>Thermostat!</title>
+  </head>
+  <body>
+    <div class="background-overlay">
+
+      <header>
+        <h1 id ="title">THERMOSTAT</h1>
+      </header>
+
+        <div id='container'>
+
+          <div id='thermostat-display'>
+
+            <p>Thermostat setting:</p>
+
+            <h2 class='temperature'><span id="thermostat-temp"></span>°C</h2>
+
+            <p id='psm-display'>Power saving mode: <strong><span id='psm-status'></span></strong></p>
+
+            <button type="button" id="reset-temp-button">Reset</button>
+            <button type="button" id="increase-temp-button">+</button>
+            <button type="button" id="decrease-temp-button">-</button>
+            <button type="button" id="toggle-psm-button">Power Saving Mode</button>
+
+          </div>
+
+
+          <div id='outside-temp-display'>
+
+            <p>Temperature outside:</p>
+
+            <h3 class='temperature'><span id="outside-temp"></span>°C</h3>
+
+            <form id="location-form">
+              <input type="text" id="location-input" value="London">
+              <input type="submit" id="update-location-button" value="Update"></input>
+            </form>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </body>
+</html>

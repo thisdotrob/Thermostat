@@ -1,0 +1,65 @@
+@font-face{
+  font-family: "Neon";
+  src: url('../fonts/Neon.ttf');
+}
+@font-face{
+  font-family: "Digital";
+  src: url('../fonts/digital-7.ttf');
+}
+body {
+  background-image: url('../images/bground.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.background-overlay {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+header {
+  margin: 0 auto;
+}
+#title {
+  text-align: center;
+  font-family: Neon;
+}
+h1 {
+  margin: auto;
+  font-size: 8vw;
+}
+h2 {
+  margin: auto;
+  font-size: 6vw;
+}
+h3 {
+  margin: auto;
+  font-size: 4vw;
+}
+p {
+  margin: auto;
+  font-family: Neon;
+}
+#container {
+  text-align: center;
+  margin-top: 4%;
+}
+#outside-temp-display {
+  margin-left: 4%;
+  text-align: center;
+  display:inline-block;
+}
+#thermostat-display {
+  margin-right: 4%;
+  text-align: center;
+  display:inline-block;
+}
+.temperature {
+  font-family: Digital;
+}
+#psm-display {
+  margin-bottom: 10%;
+}
+#location-form {
+  margin-top: 7%;
+}
