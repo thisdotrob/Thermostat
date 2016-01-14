@@ -42,8 +42,6 @@ $(document).ready(function(){
 
   var _updateBackgroundColor = function(){
     percent = _getTempPercent();
-    console.log(percent);
-    console.log(_getRGB(percent));
     $('.background-overlay').css('background-color',_getRGB(percent));
   };
 
